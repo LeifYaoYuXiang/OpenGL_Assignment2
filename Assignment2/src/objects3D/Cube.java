@@ -5,14 +5,18 @@ import GraphicsObjects.Point4f;
 import GraphicsObjects.Vector4f;
 
 public class Cube {
+	/*
+	 * author: Yao Yuxiang(Leif)
+	 * UCD NO.17205995
+	 * Date:2019/10/07
+	 * */
 
-	
 	public Cube() {
 
 	}
-	
-	// Implement using notes and examine Tetrahedron to aid in the coding  look at lecture  7 , 7b and 8 
+
 	public void DrawCube(){
+		//information of vertices
 		Point4f[] vertices={
 				new Point4f(1.0f,1.0f,1.0f,0.0f),//0
 				new Point4f(1.0f,1.0f,-1.0f,0.0f),//1
@@ -24,6 +28,11 @@ public class Cube {
 				new Point4f(-1.0f,-1.0f,-1.0f,0.0f),//7
 		};
 
+		//information of faces
+		/*
+		* Mention:
+		* 	! each face contains two triangles, then put these two triangles together
+		* */
 		int[][] faces={
 				{0,4,1},
 				{5,4,1},//Left Face
@@ -39,25 +48,40 @@ public class Cube {
 				{5,4,7},//Back Face
 		};
 
+		//begin to draw
 		GL11.glBegin(GL11.GL_TRIANGLES);
-		for (int face = 0; face < faces.length; face++) { // per face
-			Vector4f v = vertices[faces[face][1]].MinusPoint(vertices[faces[face][0]]);
-			Vector4f w = vertices[faces[face][2]].MinusPoint(vertices[faces[face][0]]);
-			Vector4f normal = v.cross(w).Normal();
+		{
+			for (int face = 0; face < faces.length; face++) {
+				// per face
+				Vector4f v = vertices[faces[face][1]].MinusPoint(vertices[faces[face][0]]);
+				Vector4f w = vertices[faces[face][2]].MinusPoint(vertices[faces[face][0]]);
+				Vector4f normal = v.cross(w).Normal();
+				//calculate the normal vector of one triangle plane
+				GL11.glNormal3f(normal.x, normal.y, normal.z);
+				//calculate the shade effect
 
-			GL11.glNormal3f(normal.x, normal.y, normal.z);
+				//draw one triangle of the face
+				GL11.glVertex3f(vertices[faces[face][0]].x, vertices[faces[face][0]].y, vertices[faces[face][0]].z);
+				GL11.glVertex3f(vertices[faces[face][1]].x, vertices[faces[face][1]].y, vertices[faces[face][1]].z);
+				GL11.glVertex3f(vertices[faces[face][2]].x, vertices[faces[face][2]].y, vertices[faces[face][2]].z);
 
-			GL11.glVertex3f(vertices[faces[face][0]].x, vertices[faces[face][0]].y, vertices[faces[face][0]].z);
-			GL11.glVertex3f(vertices[faces[face][1]].x, vertices[faces[face][1]].y, vertices[faces[face][1]].z);
-			GL11.glVertex3f(vertices[faces[face][2]].x, vertices[faces[face][2]].y, vertices[faces[face][2]].z);
+				//move to next face
+				face++;
 
-			face++;
+				//draw another triangle
+				/*
+				* ! mention:
+				* 	OpenGL is a state machine, it means that we don't need to calculate the normal vector again,
+				* 	since two triangles of one face is places together in the array, and we have calculated the normal
+				* 	vector of first triangles already, the normal vector information has been preserved in OpenGL
+				* */
+				GL11.glVertex3f(vertices[faces[face][0]].x, vertices[faces[face][0]].y, vertices[faces[face][0]].z);
+				GL11.glVertex3f(vertices[faces[face][1]].x, vertices[faces[face][1]].y, vertices[faces[face][1]].z);
+				GL11.glVertex3f(vertices[faces[face][2]].x, vertices[faces[face][2]].y, vertices[faces[face][2]].z);
 
-			GL11.glVertex3f(vertices[faces[face][0]].x, vertices[faces[face][0]].y, vertices[faces[face][0]].z);
-			GL11.glVertex3f(vertices[faces[face][1]].x, vertices[faces[face][1]].y, vertices[faces[face][1]].z);
-			GL11.glVertex3f(vertices[faces[face][2]].x, vertices[faces[face][2]].y, vertices[faces[face][2]].z);
+			} // per face
 
-		} // per face
+		}
 		GL11.glEnd();
 
 
@@ -67,11 +91,3 @@ public class Cube {
 	
 	
 }
- 
-	/*
-	 
-	 
-}
-
-	*/
-	 

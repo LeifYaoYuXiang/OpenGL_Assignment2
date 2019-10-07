@@ -11,6 +11,11 @@ import GraphicsObjects.Vector4f;
  * 
  */
 public class Tetrahedron {
+	/*
+	 * author: Yao Yuxiang(Leif)
+	 * UCD NO.17205995
+	 * Date:2019/10/07
+	 * */
 
 	public Tetrahedron() {
 

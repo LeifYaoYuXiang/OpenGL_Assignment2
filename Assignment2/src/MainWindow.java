@@ -23,6 +23,11 @@ import objects3D.Cylinder;
 
 // Again !!!! Do not touch this class, I will be making a version of it for your 3rd Assignment 
 public class MainWindow {
+	/*
+	 * author: Yao Yuxiang(Leif)
+	 * UCD NO.17205995
+	 * Date:2019/10/07
+	 * */
 
 	/** position of quad */
 	float x = 400, y = 300;

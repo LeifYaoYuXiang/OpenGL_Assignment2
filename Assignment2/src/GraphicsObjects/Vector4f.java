@@ -4,6 +4,12 @@ package GraphicsObjects;
 
 public class Vector4f {
 
+	/*
+	 * author: Yao Yuxiang(Leif)
+	 * UCD NO.17205995
+	 * Date:2019/10/07
+	 * */
+
 	public float x=0;
 	public float y=0;
 	public float z=0;
@@ -25,7 +31,12 @@ public class Vector4f {
 		this.a = a;
 	}
 	
-	 //implement Vector plus a Vector 
+	/*
+	* Goal:
+	* 	use this vector plus another one
+	* Mechanism:
+	* 	plus x,y,z,a position respectively
+	* */
 	public Vector4f PlusVector(Vector4f Additonal) 
 	{ 
 		 this.x=Additonal.x+this.x;
@@ -33,9 +44,14 @@ public class Vector4f {
 		 this.z=Additonal.z+this.z;
 		 this.a=Additonal.a+this.a;
 		 return this;
-	} 
-	
-	 //implement Vector minus a Vector 
+	}
+
+	/*
+	 * Goal:
+	 * 	use this vector minus another one
+	 * Mechanism:
+	 * 	minus x,y,z,a position respectively
+	 * */
 	public Vector4f MinusVector(Vector4f Minus) 
 	{ 
 		 this.x=this.x-Minus.x;
@@ -44,14 +60,24 @@ public class Vector4f {
 		 this.a=this.a-Minus.a;
 		 return this;
 	}
-	
-	//implement Vector plus a Point 
+
+	/*
+	 * Goal:
+	 * 	use this vector plus one point
+	 * Mechanism:
+	 * 	plus x,y,z,a position respectively
+	 * */
 	public Point4f PlusPoint(Point4f Additonal) 
 	{ 
 	 	return new Point4f(this.x+Additonal.x,this.y+Additonal.y,this.z+Additonal.z,this.a+Additonal.a);
 	}
-	
-	//Implement a Vector * Scalar 
+
+	/*
+	 * Goal:
+	 * 	use this vector multiply one scale
+	 * Mechanism:
+	 * 	multiply x,y,z,a position respectively
+	 * */
 	public Vector4f byScalar(float scale )
 	{
 		this.x=this.x*scale;
@@ -60,8 +86,13 @@ public class Vector4f {
 		this.a=this.a*scale;
 		return this;
 	}
-	
-	//implement returning the negative of a  Vector  
+
+	/*
+	 * Goal:
+	 * 	make the direction of one vector negative
+	 * Mechanism:
+	 * 	negate x,y,z,a position respectively
+	 * */
 	public Vector4f  NegateVector()
 	{
 	 	this.x=-this.x;
@@ -70,14 +101,24 @@ public class Vector4f {
 		this.a=-this.a;
 		return this;
 	}
-	
-	//implement getting the length of a Vector  
+
+	/*
+	 * Goal:
+	 * 	calculate the length of one vector
+	 * Mechanism:
+	 * 	length=sqrt(x*x+y*y+z*z+a*a)
+	 * */
 	public float length()
 	{
 	 	return (float) Math.sqrt(this.x*this.x+this.y*this.y+this.z*this.z+this.a*this.a);
 	}
-	
-	//implement getting the Normal  of a Vector  
+
+	/*
+	 * Goal:
+	 * 	use this vector's normal vector
+	 * Mechanism:
+	 * 	divide the x,y,z,a position by the length of this vector respectively
+	 * */
 	public Vector4f Normal()
 	{
 	 	this.x=this.x/this.length();
@@ -85,24 +126,27 @@ public class Vector4f {
 	 	this.z=this.z/this.length();
 	 	this.a=this.a/this.length();
 	 	return this;
-	} 
-	
-	//implement getting the dot product of Vector.Vector  
+	}
 
+	/*
+	 * Goal:
+	 * 	dot cross this vector and another vector
+	 * Mechanism:
+	 *  dot_cross=this.x*v.x + this.y*v.y + this.z*v.z+ this.a*v.a
+	 * */
 	public float dot(Vector4f v)
-	{ 
+	{
 		return ( this.x*v.x + this.y*v.y + this.z*v.z+ this.a*v.a);
 	}
 	
-	// Implemented this for you to avoid confusion 
-	// as we will not normally  be using 4 float vector  
-	public Vector4f cross(Vector4f v)  
-	{ 
-    float u0 = (this.y*v.z - z*v.y);
-    float u1 = (z*v.x - x*v.z);
-    float u2 = (x*v.y - y*v.x);
-    float u3 = 0; //ignoring this for now  
-    return new Vector4f(u0,u1,u2,u3);
+
+	public Vector4f cross(Vector4f v) {
+    	float u0 = (this.y*v.z - z*v.y);
+    	float u1 = (z*v.x - x*v.z);
+    	float u2 = (x*v.y - y*v.x);
+    	float u3 = 0; //ignoring this for now
+
+    	return new Vector4f(u0,u1,u2,u3);
 	}
  
 }

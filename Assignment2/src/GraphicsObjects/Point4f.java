@@ -2,13 +2,19 @@ package GraphicsObjects;
 
 public class Point4f {
 
-	public float x;
-	public float y;
-	public float z;
+	/*
+	* author: Yao Yuxiang(Leif)
+	* UCD NO.17205995
+	* Date:2019/10/07
+	* */
+
+	public float x;//x-position
+	public float y;//y-position
+	public float z;//z-position
 	public float a;
 	
 	
-	// default constructor
+	//default constructor
 	public Point4f() { 
 		x = 0.0f;
 		y = 0.0f;
@@ -24,7 +30,10 @@ public class Point4f {
 		this.a = a;
 	}
 	
-	// sometimes for different algorithms we will need to address the point using positions 0 1 2  3 
+	/*
+	* Goal:
+	* 	According to the input parameter determine the return value of X,Y,Z,a positions
+	* */
 	public float getPostion(int postion)
 	{
 		switch(postion)
@@ -36,13 +45,22 @@ public class Point4f {
 		default: return Float.NaN;  
 		} 
 	}
-	
+
+	/*
+	* Goal:
+	* 	Override the toString() method
+	* */
 	public String toString()
 	{
 		return ("(" + x +"," + y +"," + z + "," + a +")");
     }
  
-	 //implement Point plus a Vector 
+	/*
+	* Goal:
+	* 	add Additonal(an vector) to this point and get a new point
+	* Mechanism:
+	* 	add the x,y,z,a position respectively
+	* */
 	public Point4f PlusVector(Vector4f Additonal) { 
 	 	this.x=this.x+Additonal.x;
 	 	this.y=this.y+Additonal.y;
@@ -51,7 +69,12 @@ public class Point4f {
 	 	return this;
 	} 
 	
-	 //implement Point minus a Vector 
+	/*
+	* Goal:
+	* 	use this point to minus the Minus(a vector) to get a new point
+	* Mechanism:
+	* 	minus x,y,z,a position respectively
+	* */
 	public Point4f MinusVector(Vector4f Minus) { 
 		 this.x=this.x-Minus.x;
 		 this.y=this.y-Minus.y;
@@ -61,17 +84,15 @@ public class Point4f {
 	}
 	
 	
-	///implement  Point - Point
+	/*
+	* Goal:
+	* 	use this point to minus anther one to get a new vector
+	* Mechanism:
+	* 	minus x,y,z,a position respectively
+	* */
 	public Vector4f MinusPoint(Point4f Minus) { 
 		return new Vector4f(this.x-Minus.x,this.y-Minus.y,this.z-Minus.z,this.a-Minus.a) ;
 	}
-	
-	 
-	 // Remember point + point  is not defined so we not write a method for it. 
-	
-	
-	 
-	  
 	
 }
 
