@@ -5,24 +5,13 @@
     <bookmark url="file://$PROJECT_DIR$/Assignment2/src/MainWindow.java" line="95" />
     <bookmark url="file://$PROJECT_DIR$/Assignment2/src/objects3D/Cube.java" line="27" />
     <bookmark url="file://$PROJECT_DIR$/Assignment2/src/objects3D/Octahedron.java" line="58" />
-    <bookmark url="file://$PROJECT_DIR$/Assignment2/src/objects3D/Cylinder.java" line="69" />
-    <bookmark url="file://$PROJECT_DIR$/Assignment2/src/objects3D/Sphere.java" line="53" />
-    <bookmark url="file://$PROJECT_DIR$/Assignment2/src/objects3D/Sphere.java" line="25" />
+    <bookmark url="file://$PROJECT_DIR$/Assignment2/src/objects3D/Cylinder.java" line="83" />
+    <bookmark url="file://$PROJECT_DIR$/Assignment2/src/objects3D/Sphere.java" line="74" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b209644d-9ce6-4d9a-871c-5c3f343dcbab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/src/GraphicsObjects/Point4f.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/GraphicsObjects/Point4f.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/src/GraphicsObjects/Vector4f.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/GraphicsObjects/Vector4f.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/src/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/src/objects3D/Cube.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/objects3D/Cube.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment2/src/objects3D/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/objects3D/Cylinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/src/objects3D/Icosahedron.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/objects3D/Icosahedron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/src/objects3D/Octahedron.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/objects3D/Octahedron.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment2/src/objects3D/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/objects3D/Sphere.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/src/objects3D/Tetrahedron.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/objects3D/Tetrahedron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment2/objects3D/Cylinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment2/objects3D/Cylinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment2/objects3D/Icosahedron.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment2/objects3D/Icosahedron.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +28,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assignment2/src/objects3D/Cylinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="63" column="65" selection-start-line="63" selection-start-column="65" selection-end-line="63" selection-end-column="65" />
+            <state relative-caret-position="475">
+              <caret line="52" column="58" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment2/src/objects3D/Sphere.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1254">
+              <caret line="66" column="24" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,11 +65,11 @@
         <option value="$PROJECT_DIR$/Assignment2/src/MainWindow.java" />
         <option value="$PROJECT_DIR$/Assignment2/src/GraphicsObjects/Point4f.java" />
         <option value="$PROJECT_DIR$/Assignment2/src/objects3D/Tetrahedron.java" />
-        <option value="$PROJECT_DIR$/Assignment2/src/objects3D/Sphere.java" />
         <option value="$PROJECT_DIR$/Assignment2/src/objects3D/Cube.java" />
         <option value="$PROJECT_DIR$/Assignment2/src/objects3D/Octahedron.java" />
         <option value="$PROJECT_DIR$/Assignment2/src/objects3D/Icosahedron.java" />
         <option value="$PROJECT_DIR$/Assignment2/src/GraphicsObjects/Vector4f.java" />
+        <option value="$PROJECT_DIR$/Assignment2/src/objects3D/Sphere.java" />
         <option value="$PROJECT_DIR$/Assignment2/src/objects3D/Cylinder.java" />
       </list>
     </option>
@@ -91,8 +92,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,6 +120,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,7 +197,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27010724" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27345845" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -205,13 +206,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067025" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -362,16 +363,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment2/src/objects3D/Sphere.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignment2/src/objects3D/Cube.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -413,10 +404,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment2/src/objects3D/Sphere.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="66" column="24" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assignment2/src/objects3D/Cylinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="63" column="65" selection-start-line="63" selection-start-column="65" selection-end-line="63" selection-end-column="65" />
+        <state relative-caret-position="475">
+          <caret line="52" column="58" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="58" />
         </state>
       </provider>
     </entry>

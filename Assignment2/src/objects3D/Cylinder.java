@@ -43,6 +43,20 @@ public class Cylinder {
 					new Point4f(x2,y2,height,0.0f),
 			});
 
+			//draw one triangle for the top of cylinder
+			drawTriangle(new Point4f[]{
+					new Point4f(x1,y1,0.0f,0.0f),
+					new Point4f(x2,y2,0.0f,0.0f),
+					new Point4f(0.0f,0.0f,0.0f,0.0f)
+			});
+
+			//draw one triangle for the bottom of cylinder
+			drawTriangle(new Point4f[]{
+					new Point4f(x1,y1,height,0.0f),
+					new Point4f(x2,y2,height,0.0f),
+					new Point4f(0.0f,0.0f,height,0.0f)
+			});
+
 
 
 		}
