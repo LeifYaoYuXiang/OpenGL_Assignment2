@@ -229,84 +229,84 @@ public class MainWindow {
 
 	public void renderGL() {
 		// First drawing a Tetrahedron in the corner 
-		GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT); 
-		GL11.glColor3f(0.5f, 0.5f, 1.0f); 
-		GL11.glPushMatrix();
-		GL11.glTranslatef(200, 650, 0); 
-		GL11.glRotatef(45, 0f, 1f, 0f);
-		GL11.glRotatef(rotation, 1f, 1f, -1f); 
-		Tetrahedron My4die = new Tetrahedron();
-		GL11.glScalef(90f, 90f, 90f);
-		GL11.glColor3f(red[0], red[1], red[2]);
-		GL11.glMaterial(GL11.GL_FRONT_AND_BACK, GL11.GL_AMBIENT_AND_DIFFUSE, ConvertForGL(red)); 
-		My4die.DrawTetrahedron();
-
-		GL11.glPopMatrix();
-
-		// cube draw
-		GL11.glPushMatrix();
-		GL11.glTranslatef(600, 600, 0); 
-		GL11.glRotatef(45, 0f, 1f, 0f);
-		GL11.glRotatef(rotation, 1f, 1f, -1f); 
-		Cube MyCube = new Cube();
-		GL11.glScalef(90f, 90f, 90f);
-		GL11.glColor3f(blue[0], blue[1], blue[2]);
-		GL11.glMaterial(GL11.GL_FRONT_AND_BACK, GL11.GL_AMBIENT_AND_DIFFUSE, ConvertForGL(blue));
-
-		MyCube.DrawCube();
-
-		GL11.glPopMatrix();
-
-		// Octahedron Draw
-		GL11.glPushMatrix();
-		GL11.glTranslatef(1000, 600, 0); 
-		GL11.glRotatef(-45, 0f, 1f, 1f);
-		GL11.glRotatef(rotation, 1f, 1f, -1f); 
-		Octahedron MyOctahedron = new Octahedron();
-		GL11.glScalef(90f, 90f, 90f);
-		GL11.glColor3f(yellow[0], yellow[1], yellow[2]);
-		GL11.glMaterial(GL11.GL_FRONT_AND_BACK, GL11.GL_AMBIENT_AND_DIFFUSE, ConvertForGL(yellow));
-
-		MyOctahedron.DrawOctahedron();
-
-		GL11.glPopMatrix();
-
-		// Icosahedron Draw
-		GL11.glPushMatrix();
-		GL11.glTranslatef(200, 200, 0); 
-		GL11.glRotatef(45, 0f, 1f, 0f);
-		GL11.glRotatef(rotation, 1f, 1f, -1f); 
-		Icosahedron MyIcosahedron = new Icosahedron();
-		GL11.glScalef(90f, 90f, 90f);
-		GL11.glColor3f(green[0], green[1], green[2]);
-		GL11.glMaterial(GL11.GL_FRONT_AND_BACK, GL11.GL_AMBIENT_AND_DIFFUSE, ConvertForGL(green));
-
-		MyIcosahedron.DrawIcosahedron();
-
-		GL11.glPopMatrix();
-
-		// Cylinder Draw
-		GL11.glPushMatrix();
-		GL11.glTranslatef(600, 250, 0); 
-		GL11.glRotatef(45, 0f, 1f, 0f);
-		GL11.glRotatef(rotation, 1f, 0f, 0f);
-		// GL11.glTranslatef(-x, -y, 0);
-		Cylinder MyCylinder = new Cylinder();
-		GL11.glScalef(90f, 90f, 90f);
-		GL11.glColor3f(magenta[0], magenta[1], magenta[2]);
-		GL11.glMaterial(GL11.GL_FRONT_AND_BACK, GL11.GL_AMBIENT_AND_DIFFUSE, ConvertForGL(magenta));
-
-		MyCylinder.DrawCylinder(0.5f, 1.5f, 100);
-
-		GL11.glPopMatrix();
+		GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
+//		GL11.glColor3f(0.5f, 0.5f, 1.0f);
+//		GL11.glPushMatrix();
+//		GL11.glTranslatef(200, 650, 0);
+//		GL11.glRotatef(45, 0f, 1f, 0f);
+//		GL11.glRotatef(rotation, 1f, 1f, -1f);
+//		Tetrahedron My4die = new Tetrahedron();
+//		GL11.glScalef(90f, 90f, 90f);
+//		GL11.glColor3f(red[0], red[1], red[2]);
+//		GL11.glMaterial(GL11.GL_FRONT_AND_BACK, GL11.GL_AMBIENT_AND_DIFFUSE, ConvertForGL(red));
+//		My4die.DrawTetrahedron();
+//
+//		GL11.glPopMatrix();
+//
+//		// cube draw
+//		GL11.glPushMatrix();
+//		GL11.glTranslatef(600, 600, 0);
+//		GL11.glRotatef(45, 0f, 1f, 0f);
+//		GL11.glRotatef(rotation, 1f, 1f, -1f);
+//		Cube MyCube = new Cube();
+//		GL11.glScalef(90f, 90f, 90f);
+//		GL11.glColor3f(blue[0], blue[1], blue[2]);
+//		GL11.glMaterial(GL11.GL_FRONT_AND_BACK, GL11.GL_AMBIENT_AND_DIFFUSE, ConvertForGL(blue));
+//
+//		MyCube.DrawCube();
+//
+//		GL11.glPopMatrix();
+//
+//		// Octahedron Draw
+//		GL11.glPushMatrix();
+//		GL11.glTranslatef(1000, 600, 0);
+//		GL11.glRotatef(-45, 0f, 1f, 1f);
+//		GL11.glRotatef(rotation, 1f, 1f, -1f);
+//		Octahedron MyOctahedron = new Octahedron();
+//		GL11.glScalef(90f, 90f, 90f);
+//		GL11.glColor3f(yellow[0], yellow[1], yellow[2]);
+//		GL11.glMaterial(GL11.GL_FRONT_AND_BACK, GL11.GL_AMBIENT_AND_DIFFUSE, ConvertForGL(yellow));
+//
+//		MyOctahedron.DrawOctahedron();
+//
+//		GL11.glPopMatrix();
+//
+//		// Icosahedron Draw
+//		GL11.glPushMatrix();
+//		GL11.glTranslatef(200, 200, 0);
+//		GL11.glRotatef(45, 0f, 1f, 0f);
+//		GL11.glRotatef(rotation, 1f, 1f, -1f);
+//		Icosahedron MyIcosahedron = new Icosahedron();
+//		GL11.glScalef(90f, 90f, 90f);
+//		GL11.glColor3f(green[0], green[1], green[2]);
+//		GL11.glMaterial(GL11.GL_FRONT_AND_BACK, GL11.GL_AMBIENT_AND_DIFFUSE, ConvertForGL(green));
+//
+//		MyIcosahedron.DrawIcosahedron();
+//
+//		GL11.glPopMatrix();
+//
+//		// Cylinder Draw
+//		GL11.glPushMatrix();
+//		GL11.glTranslatef(600, 250, 0);
+//		GL11.glRotatef(45, 0f, 1f, 0f);
+//		GL11.glRotatef(rotation, 1f, 0f, 0f);
+//		// GL11.glTranslatef(-x, -y, 0);
+//		Cylinder MyCylinder = new Cylinder();
+//		GL11.glScalef(90f, 90f, 90f);
+//		GL11.glColor3f(magenta[0], magenta[1], magenta[2]);
+//		GL11.glMaterial(GL11.GL_FRONT_AND_BACK, GL11.GL_AMBIENT_AND_DIFFUSE, ConvertForGL(magenta));
+//
+//		MyCylinder.DrawCylinder(0.5f, 1.5f, 100);
+//
+//		GL11.glPopMatrix();
 
 		// Sphere Draw
 		GL11.glPushMatrix();
-		GL11.glTranslatef(1000, 250, 0); 
+		GL11.glTranslatef(1000, 250, 0);
 		GL11.glRotatef(45, 0f, 1f, 0f);
 		GL11.glRotatef(rotation, 1f, 0f, 0f); 
 		Sphere MySphere = new Sphere();
-		GL11.glScalef(90f, 90f, 90f);
+		GL11.glScalef(360f, 360f, 360f);
 		GL11.glColor3f(cyan[0], cyan[1], cyan[2]);
 		GL11.glMaterial(GL11.GL_FRONT_AND_BACK, GL11.GL_SPECULAR, ConvertForGL(cyan));
 
