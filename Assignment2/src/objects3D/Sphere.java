@@ -37,21 +37,21 @@ public class Sphere {
 					float x= (float) (radius*Math.cos(phi)*Math.cos(theta));
 					float y=(float) (radius*Math.cos(phi)*Math.sin(theta));
 					float z= (float) (radius*Math.sin(phi));
-					//GL11.glNormal3f(x,y,z);
+					GL11.glNormal3f(x,y,z);
 					GL11.glVertex3f(x,y,z);
 
 					//Draw the second point
 					float x_step_phi=(float) (radius*Math.cos(phi+incphi)*Math.cos(theta));
 					float y_step_phi=(float) (radius*Math.cos(phi+incphi)*Math.sin(theta));
 					float z_step_phi=(float) (radius*Math.sin(phi+incphi));
-					//GL11.glNormal3f(x_step_phi,y_step_phi,z_step_phi);
+					GL11.glNormal3f(x_step_phi,y_step_phi,z_step_phi);
 					GL11.glVertex3f(x_step_phi,y_step_phi,z_step_phi);
 
 					//Draw the third point
 					float x_step_theta_phi=(float) (radius*Math.cos(phi+incphi)*Math.cos(theta+inctheta));
 					float y_step_theta_phi=(float) (radius*Math.cos(phi+incphi)*Math.sin(theta+inctheta));
 					float z_step_theta_phi=(float) (radius*Math.sin(phi+incphi));
-					//GL11.glNormal3f(x_step_theta_phi,y_step_theta_phi,z_step_theta_phi);
+					GL11.glNormal3f(x_step_theta_phi,y_step_theta_phi,z_step_theta_phi);
 					GL11.glVertex3f(x_step_theta_phi,y_step_theta_phi,z_step_theta_phi);
 
 					//Draw the forth point
