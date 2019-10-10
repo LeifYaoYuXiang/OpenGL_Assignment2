@@ -76,6 +76,22 @@ public class Cylinder {
 			//calculate the normal vector
 			GL11.glNormal3f(normal.x,normal.y,normal.z);
 			//use the normal vector to determine the shade effect
+
+			Vector4f v3=second_point.MinusPoint(first_point);
+			Vector4f v4=second_point.MinusPoint(third_point);
+			Vector4f normal2=v3.cross(v4).Normal();
+
+			GL11.glNormal3f(normal2.x,normal2.y,normal2.z);
+
+			Vector4f v5=third_point.MinusPoint(first_point);
+			Vector4f v6=third_point.MinusPoint(second_point);
+			Vector4f normal3=v5.cross(v6).Normal();
+			GL11.glNormal3f(normal3.x,normal3.y,normal3.z);
+
+
+
+
+
 			GL11.glVertex3f(first_point.x,first_point.y,first_point.z);
 			GL11.glVertex3f(second_point.x,second_point.y,second_point.z);
 			GL11.glVertex3f(third_point.x,third_point.y,third_point.z);
