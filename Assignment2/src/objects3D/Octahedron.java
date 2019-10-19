@@ -38,7 +38,7 @@ public class Octahedron {
 				{0,1,3},
 				{0,1,4},
 				{0,4,5},
-				{0,3,5},
+				{3,0,5},
 		};
 
 		GL11.glBegin(GL11.GL_TRIANGLES);
